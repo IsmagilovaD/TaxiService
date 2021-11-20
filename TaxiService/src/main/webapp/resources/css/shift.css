@@ -1,0 +1,16 @@
+.green-header{
+    color: #3b8f60;
+    padding: 10px;
+    border-bottom: 1px solid rgba(48, 28, 7, 0.8);
+    border-collapse: collapse;
+}
+.green-table-text{
+    color: #3b8f60;
+    padding: 10px;
+    border-bottom: 1px solid rgba(48, 28, 7, 0.8);
+}
+
+.shift-table{
+    text-align: center;
+    margin: 0 10px;
+}

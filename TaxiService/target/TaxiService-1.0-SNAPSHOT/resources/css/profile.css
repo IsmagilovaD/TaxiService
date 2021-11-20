@@ -1,0 +1,29 @@
+.profile-heading{
+    text-align: left;
+    font-size: 20px;
+    padding-top: 20px;
+    margin: 0 20px;
+    color: #3b8f60;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+
+.logout-button{
+    border: 2px solid #3b8f60;
+    background-color: #3b8f60;
+    border-radius: 37px;
+    width: 100px;
+    height: 40px;
+
+    display: inline;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+    padding: 0;
+    line-height: 0;
+
+    align-items: center;
+    text-align: center;
+}

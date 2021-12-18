@@ -19,19 +19,18 @@ import java.nio.file.Paths;
 import java.util.Optional;
 import java.util.UUID;
 
-@Service
+
 public class FilesServiceImpl implements FilesService {
 
-    @Value("${storage.path}")
     private String storagePath;
 
     private final FilesRepository filesRepository;
     private final CustomersRepository customersRepository;
 
-    @Autowired
-    public FilesServiceImpl(FilesRepository filesRepository, CustomersRepository customersRepository) {
+    public FilesServiceImpl(FilesRepository filesRepository, CustomersRepository customersRepository, String storagePath) {
         this.filesRepository = filesRepository;
         this.customersRepository = customersRepository;
+        this.storagePath = storagePath;
     }
 
     @Override

@@ -15,12 +15,11 @@ import ru.itis.services.ShiftService;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+
 public class ShiftServiceImpl implements ShiftService {
     private final ShiftsRepository shiftsRepository;
     private final DriversRepository driversRepository;
 
-    @Autowired
     public ShiftServiceImpl(ShiftsRepository shiftsRepository, DriversRepository driversRepository) {
         this.shiftsRepository = shiftsRepository;
         this.driversRepository = driversRepository;

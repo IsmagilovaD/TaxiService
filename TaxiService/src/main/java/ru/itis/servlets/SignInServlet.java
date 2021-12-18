@@ -22,9 +22,7 @@ public class SignInServlet extends HttpServlet {
 
     @Override
     public void init(ServletConfig config) throws ServletException {
-        ServletContext servletContext = config.getServletContext();
-        ApplicationContext applicationContext = (ApplicationContext) servletContext.getAttribute("springContext");
-        this.signInService = applicationContext.getBean(SignInService.class);
+        this.signInService = (SignInService) config.getServletContext().getAttribute("signInService");
         this.objectMapper = (ObjectMapper) config.getServletContext().getAttribute("objectMapper");
     }
 

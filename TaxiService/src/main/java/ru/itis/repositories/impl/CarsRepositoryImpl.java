@@ -7,7 +7,7 @@ import ru.itis.repositories.CarsRepository;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
+
 public class CarsRepositoryImpl implements CarsRepository {
     @Override
     public Optional<Car> findById(Long id) {

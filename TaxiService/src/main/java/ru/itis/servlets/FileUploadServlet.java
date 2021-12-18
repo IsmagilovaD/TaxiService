@@ -22,9 +22,7 @@ public class FileUploadServlet extends HttpServlet {
 
     @Override
     public void init(ServletConfig config) {
-        ServletContext servletContext = config.getServletContext();
-        ApplicationContext applicationContext = (ApplicationContext) servletContext.getAttribute("springContext");
-        this.filesService = applicationContext.getBean(FilesService.class);
+        filesService = (FilesService) config.getServletContext().getAttribute("fileService");
     }
 
     @Override

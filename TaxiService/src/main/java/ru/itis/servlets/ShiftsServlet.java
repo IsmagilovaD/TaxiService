@@ -22,9 +22,7 @@ public class ShiftsServlet extends HttpServlet {
 
     @Override
     public void init(ServletConfig config) throws ServletException {
-        ServletContext servletContext = config.getServletContext();
-        ApplicationContext applicationContext = (ApplicationContext) servletContext.getAttribute("springContext");
-        this.shiftService = applicationContext.getBean(ShiftService.class);
+        shiftService = (ShiftService) config.getServletContext().getAttribute("shiftService");
     }
 
     @Override

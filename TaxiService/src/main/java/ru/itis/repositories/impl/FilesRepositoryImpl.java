@@ -15,7 +15,7 @@ import java.sql.PreparedStatement;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
+
 public class FilesRepositoryImpl implements FilesRepository {
 
     private final static String SQL_INSERT = "insert into file_info(storage_file_name, original_file_name, type, size) " +

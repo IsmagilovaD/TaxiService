@@ -11,11 +11,10 @@ import ru.itis.services.validation.Validator;
 
 import java.util.Optional;
 
-@Service
+
 public class ValidatorImpl implements Validator {
     private final CustomersRepository customersRepository;
 
-    @Autowired
     public ValidatorImpl(CustomersRepository customersRepository) {
         this.customersRepository = customersRepository;
     }

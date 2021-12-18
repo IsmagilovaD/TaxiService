@@ -18,7 +18,7 @@ import java.sql.Timestamp;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
+
 public class ShiftsRepositoryImpl implements ShiftsRepository {
 
     private static final String SQL_INSERT = "insert into shift(customer_id, driver_id, departure_place, arrival_place, date) values (?, ?, ?, ?, ?)";

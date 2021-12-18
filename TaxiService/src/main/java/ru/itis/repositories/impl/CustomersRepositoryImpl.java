@@ -16,7 +16,7 @@ import java.sql.Types;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
+
 public class CustomersRepositoryImpl implements CustomersRepository {
 
     private final static String SQL_INSERT = "insert into customer(first_name, last_name, age, password, phone_number, avatar_id) " +

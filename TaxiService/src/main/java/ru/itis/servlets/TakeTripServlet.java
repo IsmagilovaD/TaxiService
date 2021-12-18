@@ -31,9 +31,7 @@ public class TakeTripServlet extends HttpServlet {
 
     @Override
     public void init(ServletConfig config) throws ServletException {
-        ServletContext servletContext = config.getServletContext();
-        ApplicationContext applicationContext = (ApplicationContext) servletContext.getAttribute("springContext");
-        this.shiftService = applicationContext.getBean(ShiftService.class);
+        this.shiftService = (ShiftService) config.getServletContext().getAttribute("shiftService");
     }
 
     @Override
@@ -67,6 +65,6 @@ public class TakeTripServlet extends HttpServlet {
             request.getRequestDispatcher("take_trip.ftl").forward(request, response);
             return;
         }
-        response.sendRedirect("successful_trip.ftl");
+        request.getRequestDispatcher("successful_trip.ftl").forward(request, response);
     }
 }

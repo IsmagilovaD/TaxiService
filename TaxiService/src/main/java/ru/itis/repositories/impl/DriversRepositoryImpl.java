@@ -15,7 +15,7 @@ import java.sql.PreparedStatement;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
+
 public class DriversRepositoryImpl implements DriversRepository {
 
 
